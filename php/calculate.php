@@ -12,6 +12,7 @@ if (isset($_GET['number'])) {
 
     // Send JSON response
     header('Content-Type: application/json');
+    echo "well done"; 
     echo json_encode(['factorial' => $result]);
     exit();
 }
